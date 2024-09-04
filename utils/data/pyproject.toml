@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "datavision"
+version = "1.0.0"
+description = ""
+authors = ["Wisal <wisal@openfabric.ai>"]
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "default"
+
+[[tool.poetry.source]]
+name = "node2"
+url = "https://repo.node2.openfabric.network/index"
+priority = "supplemental"
+
+[tool.poetry.dependencies]
+python = "^3.8.10"
+pandas = "^2.0.3"
+openai = "^0.27.8"
+plotly = "^5.15.0"
+typing-inspect = "0.8.0"
+typing_extensions = "4.5.0"
+tabulate = "^0.9.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
